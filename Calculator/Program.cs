@@ -6,6 +6,11 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Sum();
+        }
+        
+        static void Sum()
+        {
             Console.Clear();
             Console.WriteLine("Digite o primeiro valor: ");
             float v1 = float.Parse(Console.ReadLine());
