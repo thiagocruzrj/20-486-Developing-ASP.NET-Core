@@ -1,0 +1,12 @@
+stages:
+- stage: stageA
+  displayName: Stage A
+  jobs:
+    - job: jobA1
+      displayName: Job Stage A1
+      pool:
+       vmImage: 'windows-2019'
+    - job: jobA2
+      displayName: Job Stage A2
+      pool:
+       vmImage: 'windows-2019'
