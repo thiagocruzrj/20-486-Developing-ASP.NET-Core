@@ -3,15 +3,15 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
+trigger: # Gatilho na branch master, sempre que a master for atualizada esse gatilho será acionado
 - master
 
-pool:
+pool: # Um agent pool com o sistema ubunto com a ultima versão disponivel
   vmImage: 'ubuntu-latest'
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+steps: # Scripts para escrita no log uma mensagem
+- script: echo Primeira pipeline com YAML!
+  displayName: 'Script no YAML'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
