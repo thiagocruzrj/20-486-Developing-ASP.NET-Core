@@ -1,0 +1,8 @@
+stages:
+- stage: stage 1
+pool:
+  vmImage: 'ubuntu-latest'
+job:
+ - job: job1
+   steps:
+    - script: echo "Rodando a partir de Template"
