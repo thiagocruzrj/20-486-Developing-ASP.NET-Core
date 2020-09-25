@@ -7,7 +7,7 @@ trigger: # Gatilho na branch master, sempre que a master for atualizada esse gat
 - feature/* 
 
 pool: # Um agent pool com o sistema ubunto com a ultima versão disponivel
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-2019'
 
 steps: # Scripts para escrita no log uma mensagem
 - script: echo Primeira pipeline com YAML!
