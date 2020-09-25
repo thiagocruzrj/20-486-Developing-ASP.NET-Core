@@ -1,0 +1,11 @@
+jobs:
+ - job: job1
+   pool:
+     vmImage: 'ubuntu-latest'
+   steps:
+     - template: step1.yml
+ - job: job1
+   pool:
+     vmImage: 'ubuntu-latest'
+   steps:
+     - template: step2.yml
