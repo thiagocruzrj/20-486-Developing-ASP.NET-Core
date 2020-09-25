@@ -39,7 +39,7 @@ stages:
 
 - stage: stageD
   displayName: Stage D
-  dependsOn: stageC
+  dependsOn: stageB
   jobs:
     - job: jobD1
       displayName: Job Stage D1
@@ -47,5 +47,17 @@ stages:
        vmImage: 'windows-2019'
     - job: jobD2
       displayName: Job Stage D2
+      pool:
+       vmImage: 'windows-2019'
+
+- stage: stageE
+  displayName: Stage E
+  jobs:
+    - job: jobE1
+      displayName: Job Stage E1
+      pool:
+       vmImage: 'windows-2019'
+    - job: jobE2
+      displayName: Job Stage E2
       pool:
        vmImage: 'windows-2019'
