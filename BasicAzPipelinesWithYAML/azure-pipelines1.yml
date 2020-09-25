@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger: # Gatilho na branch master, sempre que a master for atualizada esse gatilho será acionado
-- master
+- feature/* 
 
 pool: # Um agent pool com o sistema ubunto com a ultima versão disponivel
   vmImage: 'ubuntu-latest'
