@@ -10,3 +10,27 @@ stages:
       displayName: Job Stage A2
       pool:
        vmImage: 'windows-2019'
+
+- stage: stageB
+  displayName: Stage B
+  jobs:
+    - job: jobB1
+      displayName: Job Stage B1
+      pool:
+       vmImage: 'windows-2019'
+    - job: jobB2
+      displayName: Job Stage B2
+      pool:
+       vmImage: 'windows-2019'
+
+- stage: stageC
+  displayName: Stage C
+  jobs:
+    - job: jobC1
+      displayName: Job Stage C1
+      pool:
+       vmImage: 'windows-2019'
+    - job: jobC2
+      displayName: Job Stage C2
+      pool:
+       vmImage: 'windows-2019'
