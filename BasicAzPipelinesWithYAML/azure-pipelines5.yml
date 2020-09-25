@@ -12,6 +12,7 @@ steps:
           # Write your PowerShell commands here.
           
           Write-Host "Using Tasks with YAML"
+          Write-Host "$(saudacao)"
 
   - task: PublishBuildArtifacts@1
     inputs:
