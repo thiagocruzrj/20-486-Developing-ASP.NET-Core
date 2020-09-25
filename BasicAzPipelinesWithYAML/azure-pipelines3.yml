@@ -1,7 +1,29 @@
-# Jobs, dependencias e condições
+
 jobs:
 - job: job1
+  displayName: 'First job'
   pool:
-   vmImage: 'ubunto-16.04'
+   vmImage: 'ubuntu-16.04'
   steps:
     - bash: echo "first job"
+
+- job: job2
+  displayName: 'Second job'
+  pool:
+   vmImage: 'ubuntu-latest'
+  steps:
+    - bash: echo "sec job"
+
+- job: job3
+  displayName: 'Third job'
+  pool:
+   vmImage: 'windows-2019'
+  steps:
+    - bash: echo "third job"
+
+- job: job4
+  displayName: 'Fourth job'
+  pool:
+   vmImage: 'windows-2019'
+  steps:
+    - bash: echo "fourth job"
