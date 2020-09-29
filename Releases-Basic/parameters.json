@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "b7a2f9e2-1493-4edb-8461-8d93f39f3944"
+        },
+        "name": {
+            "value": "azpipelines-qas"
+        },
+        "location": {
+            "value": "Central US"
+        },
+        "hostingPlanName": {
+            "value": "ASP-AzPipelines-b8ee"
+        },
+        "serverFarmResourceGroup": {
+            "value": "AzPipelines"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "currentStack": {
+            "value": "dotnetcore"
+        },
+        "phpVersion": {
+            "value": "OFF"
+        },
+        "errorLink": {
+            "value": "https://azpipelines-qas.scm.azurewebsites.net/detectors?type=tools&name=eventviewer"
+        }
+    }
+}
