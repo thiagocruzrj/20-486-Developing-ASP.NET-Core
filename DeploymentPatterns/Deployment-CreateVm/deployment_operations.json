@@ -1,0 +1,70 @@
+[
+  {
+    "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20201004123856/operations/40A7DB686F4E4B8C",
+    "operationId": "40A7DB686F4E4B8C",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2020-10-04T15:43:00.6382896Z",
+      "duration": "PT5.2357655S",
+      "trackingId": "6fe5b016-71b4-4ff0-8f65-5dd79069fbd7",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Compute/virtualMachines/mv1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "mv1"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20201004123856/operations/D1658CB8E42DDF2E",
+    "operationId": "D1658CB8E42DDF2E",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-10-04T15:42:58.3462951Z",
+      "duration": "PT2.943771S",
+      "trackingId": "68298b06-61f9-4311-887a-90d3134a4580",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/networkInterfaces/mv1428",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "mv1428"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20201004123856/operations/0BF173564BDD4E39",
+    "operationId": "0BF173564BDD4E39",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-10-04T15:42:55.3479457Z",
+      "duration": "PT6.3156668S",
+      "trackingId": "bd009771-5758-4c32-9cb4-26e7eeae977d",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/publicIpAddresses/mv1-ip",
+        "resourceType": "Microsoft.Network/publicIpAddresses",
+        "resourceName": "mv1-ip"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20201004123856/operations/CB996BD96B9D257C",
+    "operationId": "CB996BD96B9D257C",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-10-04T15:42:52.2802626Z",
+      "duration": "PT3.2479837S",
+      "trackingId": "3b9117d3-4ad8-43fc-babe-7bb4f259936d",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Resources/deployments/AddLBBackendPool-loadBalancer-20201004124239",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "AddLBBackendPool-loadBalancer-20201004124239"
+      }
+    }
+  }
+]

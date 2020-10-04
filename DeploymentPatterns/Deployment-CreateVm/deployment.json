@@ -1,0 +1,179 @@
+{
+  "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Resources/deployments/CreateVm-MicrosoftWindowsServer.WindowsServer-201-20201004123856",
+  "name": "CreateVm-MicrosoftWindowsServer.WindowsServer-201-20201004123856",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourcegroups/AzPipelines/providers/Microsoft.Compute/virtualMachines/mv1",
+    "marketplaceItemId": "Microsoft.VirtualMachine",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "13442513873664702314",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "centralus"
+      },
+      "networkInterfaceName": {
+        "type": "String",
+        "value": "mv1428"
+      },
+      "networkSecurityGroupId": {
+        "type": "String",
+        "value": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/networkSecurityGroups/nsg"
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "default"
+      },
+      "virtualNetworkId": {
+        "type": "String",
+        "value": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/virtualNetworks/vnet"
+      },
+      "publicIpAddressName": {
+        "type": "String",
+        "value": "mv1-ip"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Static"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "mv1"
+      },
+      "virtualMachineComputerName": {
+        "type": "String",
+        "value": "mv1"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "AzPipelines"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Premium_LRS"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_B2s"
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "thiago"
+      },
+      "adminPassword": {
+        "type": "SecureString"
+      },
+      "patchMode": {
+        "type": "String",
+        "value": "AutomaticByOS"
+      },
+      "availabilitySetName": {
+        "type": "String",
+        "value": "availabilitySet"
+      },
+      "loadBalancerId": {
+        "type": "String",
+        "value": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/loadBalancers/loadBalancer"
+      },
+      "backendPoolId": {
+        "type": "String",
+        "value": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/loadBalancers/loadBalancer/backendAddressPools/backendpool"
+      },
+      "backendPoolName": {
+        "type": "String",
+        "value": "backendpool"
+      },
+      "loadBalancerRG": {
+        "type": "String",
+        "value": "AzPipelines"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2020-10-04T15:43:00.5820503Z",
+    "duration": "PT15.8010365S",
+    "correlationId": "1bb88997-6ea6-4f71-a3f0-f04bf85f65a0",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "centralus"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Resources",
+        "resourceTypes": [
+          {
+            "resourceType": "deployments",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/publicIpAddresses/mv1-ip",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "mv1-ip"
+          },
+          {
+            "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Resources/deployments/AddLBBackendPool-loadBalancer-20201004124239",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "AddLBBackendPool-loadBalancer-20201004124239"
+          }
+        ],
+        "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/networkInterfaces/mv1428",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "mv1428"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Network/networkInterfaces/mv1428",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "mv1428"
+          }
+        ],
+        "id": "/subscriptions/b7a2f9e2-1493-4edb-8461-8d93f39f3944/resourceGroups/AzPipelines/providers/Microsoft.Compute/virtualMachines/mv1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "mv1"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
